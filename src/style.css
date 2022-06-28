@@ -1,0 +1,56 @@
+* {
+  box-sizing: border-box;
+  -moz-user-select: none;
+  -webkit-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  margin: 0;
+}
+
+body {
+  background-color: #000;
+}
+
+.magnify-box {
+  width: 428px;
+  height: 761px;
+  margin: 0 auto 0 auto;
+  position: relative;
+  background-size: 100%;
+  background-repeat: no-repeat;
+}
+
+.magnify-box .magnify-zoom {
+  position: absolute;
+  border: 7px solid #fff;
+  cursor: none;
+  width: 150px;
+  height: 150px;
+  cursor: grab;
+  overflow: hidden;
+  border-radius: 50%;
+  background-repeat: no-repeat;
+  background-color: #000;
+}
+.magnify-zoom > .magnify-zoom-glass {
+  background-image: radial-gradient(
+    100% 100% at 0% 0%,
+    rgba(255, 255, 255, 0.3) 0%,
+    rgba(255, 255, 255, 0) 99%
+  );
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 100%;
+  background-color: transparent;
+  pointer-events: none;
+}
+
+.magnify-box .magnify-zoom:hover {
+  cursor: grab;
+}
+
+.magnify-box .magnify-zoom:active {
+  cursor: grabbing;
+}
