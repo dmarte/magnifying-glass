@@ -54,3 +54,38 @@ body {
 .magnify-box .magnify-zoom:active {
   cursor: grabbing;
 }
+
+#responsive-message{display:none;}
+
+@media (min-width:768px){
+  .magnify-box {
+      position: relative;
+      height: 761px;
+      width:  428px;
+      overflow: hidden;
+    }
+}
+
+@media (orientation: landscape){
+  #responsive-message{
+      display: block;
+      position: fixed;
+      top:0;
+      left: 0;
+      height: 100%;
+      width: 100%;
+      z-index: 99;
+      background-color: #000;
+      color:#fff;
+      text-align: center;
+      font-size: 30px;
+      font-family: sans-serif;
+  }
+  #responsive-message > svg {
+    color:white;
+    border-color: white;
+    fill: white;
+    display: block;
+    margin: 0 auto 0 auto;
+  }
+}
