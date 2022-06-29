@@ -1,4 +1,9 @@
-# Magnifying glass v1
+# Magnifying Glass Library
 
-A Pen created on CodePen.io. Original URL: [https://codepen.io/dmarte/pen/rNJEbZy](https://codepen.io/dmarte/pen/rNJEbZy).
+A useful library to create the Magnifying effect with ease.
 
+### Installation
+>> Step 1:
+
+
+### How it works?
