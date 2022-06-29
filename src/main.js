@@ -14,7 +14,7 @@ class Magnify {
     this.$x = 0;
     this.$y = 0;
     this.$box = element;
-    this.$level = +element.dataset.zoom || 1;
+    this.$level = +element.dataset.zoom || 2;
     this.$zoom = document.createElement("div");
     this.initializeBox();
     this.initializeZoom();
